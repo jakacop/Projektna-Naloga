@@ -1,2 +1,2 @@
 # Projektna-Naloga
-Projektna naloga o sifriranju
+Projektna naloga o šifriranju
