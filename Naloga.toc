@@ -1,0 +1,14 @@
+\select@language {german}
+\select@language {slovene}
+\contentsline {section}{\numberline {1}Uvod}{4}
+\contentsline {section}{\numberline {2}Prva \v Sifriranja}{5}
+\contentsline {subsection}{\numberline {2.1}Cezarjanka}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Monoalfabetska substitucija}{6}
+\contentsline {subsection}{\numberline {2.2}Dekriptiranje \v sifriranega sporo\v cila}{8}
+\contentsline {subsection}{\numberline {2.3}Tajna pisava Marije Stuart}{9}
+\contentsline {section}{\numberline {3}Mehanizirano \v sifriranje}{12}
+\contentsline {subsection}{\numberline {3.1}Dekriptiranje enigme}{12}
+\contentsline {section}{\numberline {4}Moderno \v sifriranje}{22}
+\contentsline {subsection}{\numberline {4.1}Alice in Bob se predstavita}{22}
+\contentsline {subsubsection}{\numberline {4.1.1}Matematika RSA}{24}
+\contentsline {section}{\numberline {5}Zaklju\v cek}{27}

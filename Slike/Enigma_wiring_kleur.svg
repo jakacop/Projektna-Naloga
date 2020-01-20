@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" width="708" height="1000" version="1.0" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" >
+<defs id="defs4" >
+<linearGradient id="linearGradientOff" >
+<stop id="stop33300" offset="0" stop-color="#c0c0c0" stop-opacity="1" />
+<stop id="stop33302" offset="1" stop-color="black" stop-opacity="1" /><!--4d4d4d-->
+</linearGradient>
+<linearGradient id="linearGradientOn" >
+<stop id="stop8" offset="0" stop-color="yellow" stop-opacity="1" />
+<stop id="stop10" offset="1" stop-color="#8d8d00" stop-opacity="1" />
+</linearGradient>
+<radialGradient id="radialGradientOff" cx="156.78708" cy="411.38525" r="24.426958" fx="156.78708" fy="411.38525" gradientTransform="matrix(1.1790201,1.9768683,-2.0744039,1.2371912,822.78422,-411.72366)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradientOff" />
+<radialGradient id="radialGradientOn" cx="156.78708" cy="411.38525" r="24.426958" fx="156.78708" fy="411.38525" gradientTransform="matrix(1.1790201,1.9768683,-2.0744039,1.2371912,822.78422,-411.72366)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradientOn" />
+<g id="geelcirkeltje" >
+<circle id="circle15" cx="0" cy="0" r="18" fill="yellow" stroke="black" stroke-width="2.4" />
+</g>
+<g id="lamp" >
+<path id="path34306" d="M 74.900141,408.46262 C 74.900867,410.84598 72.968976,412.77846 70.585617,412.77846 C 68.202258,412.77846 66.270367,410.84598 66.271093,408.46262 C 66.270367,406.07926 68.202258,404.14678 70.585617,404.14678 C 72.968976,404.14678 74.900867,406.07926 74.900141,408.46262 z " fill="black" stroke="black" stroke-width="2.4" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(0.4924275,0,0,0.4924275,108.71864,256.69791)" />
+<rect id="rect34308" x="131.84749" y="440.20776" width="23.258905" height="3.7126749" fill="#c0c0c0" stroke="black" stroke-width="0.8684957" rx="7.0758204" ry="7.0758204" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rect34310" x="131.84749" y="443.94705" width="23.258905" height="3.7126749" fill="#c0c0c0" stroke="black" stroke-width="0.8684957" rx="7.0758204" ry="7.0758204" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rect34312" x="131.84749" y="447.68634" width="23.258905" height="3.7126749" fill="#c0c0c0" stroke="black" stroke-width="0.8684957" rx="7.0758204" ry="7.0758204" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rect34314" x="131.84749" y="451.25565" width="23.258905" height="3.7126749" fill="#c0c0c0" stroke="black" stroke-width="0.8684957" rx="7.0758204" ry="7.0758204" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rect34316" x="131.84749" y="454.99493" width="23.258905" height="3.7126749" fill="#c0c0c0" stroke="black" stroke-width="0.8684957" rx="7.0758204" ry="7.0758204" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<path id="path34318" d="M 187.83571,417.95456 C 187.84232,431.14989 177.14725,441.85032 163.95192,441.85032 C 150.75659,441.85032 140.06152,431.14989 140.06813,417.95456 C 140.06152,404.75923 150.75659,394.0588 163.95192,394.0588 C 177.14725,394.0588 187.84232,404.75923 187.83571,417.95456 z " stroke="black" stroke-width="1.08633316" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(0.9065865,0,0,0.9065865,-5.4995945,40.832465)" />
+</g>
+<g id="contacttussenrotor" >
+<path id="rechts2" d="M 199,54 L 224,54 224,65 199,65" stroke="black" stroke-width="2" />
+<path id="links" d="M 225,49 L 225,70 231,70 231,65 244,65 244,54 231,54 L 231,49 225,49 z " stroke="black" stroke-width="2.4" />
+</g>
+<g id="key" >
+<rect id="toets" x="204.59474" y="551.27338" width="5.6951718" height="31.927479" fill="white" stroke="black" stroke-width="2" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="keycap" x="199.41731" y="546.95886" width="16.050028" height="5.6951718" fill="white" stroke="black" stroke-width="2" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+</g>
+<g id="switch" >
+<path id="path34" d="M 235,620 L235,612 225,612 225,620 275,620 275,617 270,617 270,622 276.5,622" fill="black" stroke="black" stroke-width="3" />
+<path id="path36" d="M 235,570 L235,578 225,578 225,570 275,570 275,573 270,573 270,568 276.5,568" fill="black" stroke="black" stroke-width="3" />
+<rect id="rect38" x="269" y="592" width="8" height="8" fill="black" stroke="black" />
+<path id="path28073" d="M 273,568 L 273,456" stroke-width="3" />
+<path id="path26075" d="M 273,622 L 273,633" fill="none" stroke="black" stroke-width="3" />
+</g>
+<g id="bussen" >
+<path id="bus1" d="M 71.448519,869.25378 L 81.113053,869.25378 L 81.113053,819.2053 L 71.448519,819.2053 M 111.4873,869.25378 L 101.82277,869.25378 L 101.82277,819.2053 L 111.4873,819.2053" fill="none" stroke="black" stroke-width="3" />
+<path id="bus2" d="M 128.91798,869.25378 L 138.58251,869.25378 L 138.58251,819.2053 L 128.91798,819.2053 M 168.95676,869.25378 L 159.29223,869.25378 L 159.29223,855.51812 L 159.29223,819.2053 L 168.95676,819.2053" fill="none" stroke="black" stroke-width="3" />
+</g>
+<g id="legebussen" >
+<use id="use39" xlink:href="#bussen" />
+<rect id="grijsblok1" x="82.795715" y="817.82465" width="17.603258" height="13.33188" fill="#c0c0c0" stroke="none" stroke-width="5" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="grijsblok2" x="140.61035" y="817.82465" width="17.603258" height="13.33188" fill="#c0c0c0" stroke="none" stroke-width="5" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<path id="kortsluiter" d="M 71.79368,815.23594 L 168.78418,815.23594" fill="none" stroke-width="5" />
+</g>
+<g id="vollebussen" >
+<use id="use45" xlink:href="#bussen" />
+<rect id="grijsblokS2" x="140.01059" y="810.23108" width="17.603258" height="13.33188" fill="#c0c0c0" stroke="none" stroke-width="5" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="grijsblokS1" x="82.19595" y="810.23108" width="17.603258" height="13.33188" fill="#c0c0c0" stroke="none" stroke-width="5" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<path id="kortsluiterS" d="M 71.29501,807.81496 L 168.52958,807.81496" fill="none" stroke="black" stroke-width="5" />
+<path id="StekkerS" d="M 75.34375,882.1875 L 75.34375,896.34375 L 75.34375,905.65625 L 75.34375,913.59375 C 75.34375,921.43376 81.65999,927.74997 89.5,927.75 L 149.53125,927.75 C 157.37126,927.75 163.68748,921.43376 163.6875,913.59375 L 163.6875,905.65625 L 163.6875,896.34375 L 163.6875,882.1875 L 149.53125,882.1875 L 89.5,882.1875 L 75.34375,882.1875 z " fill="#c0c0c0" stroke="black" stroke-width="3" />
+<path id="penS" d="M 83.61974,824.81415 L 98.2893,824.81415 L 98.2893,889.99256 L 83.61974,889.99256 L 83.61974,824.81415 z M 141.26178,824.81415 L 155.93135,824.81415 L 155.93135,889.99256 L 141.26178,889.99256 L 141.26178,824.81415 z " fill="white" stroke="black" stroke-width="3" />
+</g>
+<g id="rotor" >
+<rect id="rotorbody" x="231" y="42" width="66" height="155" fill="#c0c0c0" stroke="black" stroke-width="2.4" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rotorlines" x="244" y="42" width="40" height="155" fill="#c0c0c0" stroke="black" stroke-width="2" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<use id="use69" x="259" y="225" xlink:href="#geelcirkeltje" />
+<text id="text5" fill="black" stroke="none" stroke-width="1px" font-family="Bitstream Vera Sans" font-size="32px" font-stretch="normal" font-style="normal" font-variant="normal" font-weight="normal" line-height="100%" stroke-linecap="butt" stroke-linejoin="miter" text-align="center" text-anchor="middle" writing-mode="lr-tb" xml:space="preserve" >
+<tspan id="tspan5" x="255" y="237" >5
+</tspan>
+</text>
+</g>
+<g id="uparrow" >
+<path id="arrow6" d="M 0,0 L -10,15 10,15 z " fill="red" stroke="red" />
+</g>
+<g id="doarrow" >
+<path id="arrow7" d="M 0,0 L -10,-15 10,-15 z " fill="red" stroke="red" />
+</g>
+<g id="learrow" >
+<path id="arrow8" d="M 0,0 L 15,-10 15,10 z " fill="red" stroke="red" />
+</g>
+<g id="riarrow" >
+<path id="arrow9" d="M 0,0 L -15,-10-15,10 z " fill="red" stroke="red" />
+</g>
+</defs>
+<use id="use53" stroke="red" xlink:href="#legebussen" />
+<use id="use55" x="386" stroke="black" xlink:href="#legebussen" />
+<use id="use57" x="129" xlink:href="#vollebussen" />
+<use id="use59" x="257" xlink:href="#vollebussen" />
+<g id="cord" >
+<path id="redlead" d="M225,890 L250,930 l10,10 m-10,10l10,10 m-10,10   l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10l10,10 l10,-10   m-10,-10l10,-10m-10,-10l10,-10 L400,890" fill="none" stroke="red" stroke-width="5" />
+<path id="blacklead" d="M275,890 L255,930 M260,930m-10,10l10,10 m-10,10   l20,20 m10,-10l10,10 m10,-10 l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10l10,10 m10,-10 l10,-10m-10,-10l10,-10m-10,-10 L350,890 " fill="none" stroke="black" stroke-width="5" />
+</g>
+<g id="reflector" >
+<rect id="reflbody" x="143" y="42" width="68" height="155" fill="#c0c0c0" stroke="black" stroke-width="2" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="reflline" x="143" y="42" width="55" height="155" fill="#c0c0c0" stroke="black" stroke-width="2" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<path id="reflred" d="M 198,180 L 160,180 160,60 198,60" fill="none" stroke="#ff0000" stroke-width="3" />
+<path id="reflblack" d="M 198,100 180,100 180,140 198,140" fill="none" stroke="black" stroke-width="3" />
+</g>
+<use id="rotor4" xlink:href="#rotor" />
+<use id="rotor3" x="86" xlink:href="#rotor" />
+<use id="rotor2" x="172" xlink:href="#rotor" />
+<path id="rotor4black2" d="M244,140L284,60" stroke="black" stroke-width="3" />
+<path id="rotor4red1" d="M 244,60 L284,140" stroke="red" stroke-width="3" />
+<path id="rotor4red2" d="M 244,180L284,100" stroke="red" stroke-width="3" />
+<path id="rotor4black1" d="M244,100L284,180" stroke="black" stroke-width="3" />
+<path id="rotor3black1" d="M330,60 L 370,100" stroke="black" stroke-width="3" />
+<path id="rotor3red2" d="M 330,100L370,60" stroke="red" stroke-width="3" />
+<path id="rotor3red1" d="M 330,140L370,180" stroke="red" stroke-width="3" />
+<path id="rotor3black2" d="M330,180L370,140" stroke="black" stroke-width="3" />
+<path id="rotor2red2" d="M416,60L456,180" stroke="red" stroke-width="3" />
+<path id="rotor2black1" d="M416,100L456,60" stroke="black" stroke-width="3" />
+<path id="rotor2red1" d="M 416,180L456,140" stroke="red" stroke-width="3" />
+<path id="rotor2black2" d="M416,140L456,100" stroke="black" stroke-width="3" />
+<g id="rotor1" >
+<rect id="rotor1body" x="489" y="42" width="66" height="155" fill="#c0c0c0" stroke="black" stroke-width="2.4" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+<rect id="rotor1lines" x="502" y="42" width="53" height="155" fill="#c0c0c0" stroke="black" stroke-width="2.4" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" />
+</g>
+<g id="contactentussenrotor" fill="white" transform="translate(84,0)" >
+<use id="use222" x="-86" y="0" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use224" x="-86" y="40" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use226" x="-86" y="80" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use228" x="-86" y="120" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use230" x="0" y="0" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use232" x="0" y="40" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use234" x="0" y="80" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use236" x="0" y="120" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use238" x="86" y="40" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use240" x="86" y="0" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use242" x="86" y="120" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use244" x="86" y="80" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use246" x="172" y="40" fill="white" xlink:href="#contacttussenrotor" />
+<use id="use248" x="172" y="80" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use250" x="172" y="120" fill="red" xlink:href="#contacttussenrotor" />
+<use id="use252" x="172" y="0" fill="white" xlink:href="#contacttussenrotor" />
+</g>
+<use id="leg1" x="60" y="500" xlink:href="#geelcirkeltje" />
+<use id="use67" x="158" y="225" xlink:href="#geelcirkeltje" />
+<use id="use75" x="505" y="225" xlink:href="#geelcirkeltje" />
+<use id="use79" x="368" y="490" xlink:href="#geelcirkeltje" />
+<use id="use81" x="110" y="549" xlink:href="#geelcirkeltje" />
+<use id="use83" x="115" y="778" xlink:href="#geelcirkeltje" />
+<use id="use85" x="247" y="778" xlink:href="#geelcirkeltje" />
+<use id="use87" x="429" y="975" xlink:href="#geelcirkeltje" />
+<text id="text6" fill="black" stroke="none" stroke-width="1px" font-family="Bitstream Vera Sans" font-size="32px" font-stretch="normal" font-style="normal" font-variant="normal" font-weight="normal" line-height="100%" stroke-linecap="butt" stroke-linejoin="miter" text-align="center" text-anchor="middle" writing-mode="lr-tb" xml:space="preserve" >
+<tspan id="tspan1" x="60" y="512" >1
+</tspan>
+<tspan id="tspan2" x="106" y="561" >2
+</tspan>
+<tspan id="tspan3" x="111" y="790" >3
+</tspan>
+<tspan id="tspan4" x="501" y="237" >4
+</tspan>
+<tspan id="tspan6" x="154" y="237" >6
+</tspan>
+<tspan id="tspan7" x="243" y="790" >7
+</tspan>
+<tspan id="tspan8" x="425" y="987" >8
+</tspan>
+<tspan id="tspan9" x="364" y="502" >9
+</tspan>
+</text>
+<g id="switches" >
+<rect id="lamprail" x="86" y="446" width="512" height="6" stroke="black" stroke-width="2.4" />
+<use id="keyA" x="-129" y="25" xlink:href="#key" />
+<use id="keyS" xlink:href="#key" />
+<use id="keyD" x="129" xlink:href="#key" />
+<use id="keyF" x="258" xlink:href="#key" />
+<use id="switchA" x="-129" stroke="black" xlink:href="#switch" />
+<path id="switchAon" d="M 81.285634,607.79361 L 141.17123,596.40327" fill="none" stroke="black" stroke-width="3" />
+<use id="switchS" stroke="black" xlink:href="#switch" />
+<use id="switchD" x="129" stroke="red" xlink:href="#switch" />
+<path id="switchDoff" d="M 399.00719,595.36779 L 358.62324,585.53068 L 339.9845,585.53068" fill="none" stroke="black" stroke-width="3" />
+<use id="switchF" x="258" stroke="black" xlink:href="#switch" />
+</g>
+<text id="textA" fill="black" stroke="none" stroke-width="1px" font-family="Bitstream Vera Sans" font-size="27.97974777px" font-stretch="normal" font-style="normal" font-variant="normal" font-weight="bold" line-height="100%" stroke-linecap="butt" stroke-linejoin="miter" text-align="center" text-anchor="middle" transform="scale(0.9296261,1.0757013)" writing-mode="lr-tb" xml:space="preserve" >
+<tspan id="textlampA" x="155.01404" y="358.53998" >A
+</tspan>
+<tspan id="textlampS" x="290.53528" y="358.53998" >S
+</tspan>
+<tspan id="textlampD" x="432.55414" y="358.53998" fill="red" >D
+</tspan>
+<tspan id="textlampF" x="569.56055" y="358.53998" >F
+</tspan>
+<tspan id="textkeyA" x="85.211304" y="516.40875" fill="red" >A
+</tspan>
+<tspan id="textkeyS" x="220.73254" y="492.66428" >S
+</tspan>
+<tspan id="textkeyD" x="362.7514" y="492.66428" >D
+</tspan>
+<tspan id="textkeyF" x="499.75781" y="492.66428" >F
+</tspan>
+<tspan id="textplugA" x="131.2514" y="795.56702" >A
+</tspan>
+<tspan id="textplugS" x="266.77264" y="795.56702" >S
+</tspan>
+<tspan id="textplugD" x="408.7915" y="795.56702" >D
+</tspan>
+<tspan id="textplugF" x="545.79791" y="795.56702" >F
+</tspan>
+</text>
+<use id="ar1" x="35" y="600" xlink:href="#doarrow" />
+<use id="ar2" x="178" y="700" xlink:href="#doarrow" />
+<use id="ar3" x="120" y="714" xlink:href="#riarrow" />
+<use id="ar4" x="628" y="500" xlink:href="#uparrow" />
+<use id="ar5" x="600" y="180" xlink:href="#learrow" />
+<use id="ar6" x="160" y="120" xlink:href="#uparrow" />
+<use id="ar7" x="600" y="140" xlink:href="#riarrow" />
+<use id="ar8" x="646" y="500" xlink:href="#doarrow" />
+<use id="ar9" x="500" y="733" xlink:href="#learrow" />
+<use id="ar10" x="330" y="960" xlink:href="#riarrow" />
+<use id="ar11" x="437" y="630" xlink:href="#uparrow" />
+<use id="ar12" x="403" y="500" xlink:href="#uparrow" />
+<use id="lampA" fill="url(#radialGradientOff)" xlink:href="#lamp" />
+<use id="lampS" x="130" fill="url(#radialGradientOff)" xlink:href="#lamp" />
+<use id="lampD" x="260" fill="url(#radialGradientOn)" xlink:href="#lamp" />
+<use id="lampF" x="390" fill="url(#radialGradientOff)" xlink:href="#lamp" />
+<path id="redwire" d="M 86,448 L35,449 35,492M35,535 L35,633 144,633 144,624M 147,596 L 178,596 178,836 160,836M 81,836 L 62,836 62,714 628,714 628,180 502,180 M 502,140 L 646,140 646,733 191,733 191,836 209,836 M 417,836 L 436,836 436,596 400,596 " fill="none" stroke="red" stroke-width="3" />
+<path id="blackwire" d="M 531,633 L 145,633 M 211,586 L227,586 270,596 307,596 307,835 289,835 M 338,836 L 319,836 319,752 666,752 666,100 502,100 M 502,60 L 684,60 L 684,770 L 446,770 L 446,835 467,835 M 546,835 L 565,835 565,596 532,596 529,596 483,586 469,586" fill="none" stroke="black" stroke-width="3" />
+<g id="battery" >
+<path id="plus" d="M25,500 l20,0 m-20,20 l20,0 m-20,20 l20,0" fill="none" stroke="black" stroke-width="4" />
+<path id="min" d="M30,492 l10,0 m-10,20 l10,0 m-10,20 l10,0" fill="none" stroke="black" stroke-width="8" />
+</g>
+</svg>

@@ -1,0 +1,324 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+%
+\usepackage[a4paper]{geometry}
+\usepackage[slovene,english,german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{graphicx}
+%
+%
+\author{Jaka Èop}
+\title{Šifriranje od starega Egipta do kvantne kriptografije}
+%
+\begin{document}
+ \selectlanguage{slovene}
+  \maketitle
+%
+  \abstract{V nalogi bomo pregledali šifriranje od zaèetkov do kvantnega šifriranja današnjih dni.}
+  \newpage
+%
+\tableofcontents
+\newpage
+%
+
+\section{Uvod}
+Že tisoèletja se kralji, kraljice in generali zanašajo na hitre in zanesljive poti sporoèanja, da bi lahko vodili svoje države
+in vojske. In že od nekdaj tudi vedo, kako hude so lahko posledice, èe bi njihova sporoèilaprišla v napaène roke. Tedaj bi
+države tekmice ali nasprotnikova vojska izvedele za dobro varovane skrivnosti in odloèilne informacije. Nevarnost, da bi
+nasprotnik lahko prestregel takšna pomembna sporoèila, je bila spodbuda za razvoj raznih šifrirnih postopkov. Te tehnike
+prikrivanja naj bi zagotovile, da bo sporoèilo znal prebrati samo pravi prejemnik.
+
+Želja, da bi bi doloèena sporoèila ostala tajna, je povzroèila, da so države uvedle svoje tajne službe, ki naj bi razvile
+najboljše mogoèe šifre in bile odgovorne za varno prenašanje sporoèil. Hkrati s tem pa so nasprotnikovi dekripterji poskušali
+ukrasti te šifre in z njimi tudi razne skrivnosti. Dekripterji so jezikovni alkimisti, z miti obdano pleme, ki poskuša iz vrste
+simbolov brez pomena prièarati smiselne besede. Zgodovina tajnih pisav, kodov in šifer je zgodovina stoletja starega boja med
+šifrerji in dekripterji, duhovne oboroževalne tekme, ki dramatièno vpliva na potek zgodovine.
+
+Nenehni boj med šifrerji in dekripterji je spodbudil vrsto znanstvenih prebojev. Eni nenehno išèejo nove šifrirne postopke,
+drugi pa razvijajo vse moènejše metode za napad nanje. Obe strani, ena, ki išèe vedno nove šifrirne postopke, in druga, ki jih
+poskuša èim prej streti, uporabljata celo vrsto znanstvenih disciplin in postopkov, od matematike do jezikoslovja in od
+iformatike do kvantne teorije. Šifrerji in dekripterji po svoje bogatijo ta strokovna podroèja, njihovo delo pa pospešuje
+tehnièni razvoj, zlasti raèunalništva. Šifre so vpletene v zgodovino, odloèale so o bitkah in povzroèale smrt kronanih glav
+\ldots
+
+\newpage
+
+\section{Prva Šifriranja}
+
+\subsection{Cezarjanka}
+Cezarjeva šifra ali cezarjanka je ena najbolj znanih in najbolj preprostih šifer ter najstarejših starorimskih šifer. Èe stte
+mislili, da je šifro razvil Julij Cezar se motite! Razvil jo je Cicerov osvobojeni suženj Tiron. Ker jo je veliko uporabljal za
+šifriranje svojih sporoèil se šifra imenuje po njemu.
+
+Gre za monoalfabetsko substitucijsko šifro, saj za vsako èrko odprtega besedila šifrirni kljuè doloèi drugo èrko. V primeru
+cezarjeve šifre šifrirni kljuè doloèa za koliko mest se premakne šifrirana abeceda glede na odprto. Pošiljatelj in prejemnik
+sporoèila morata uporabiti isto število zamenjave.
+
+\begin{flushleft}
+Primer: šifrirni kljuè(premik za 3 mesta)
+\end{flushleft}
+$$
+\mbox{}\hspace{-4em}\begin{tabular}{cccccccccccccccccccccccc}
+%  \hline{1-22}
+  A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & R & S & T & U & V & Z & &  \\
+  D & E & F & G & H & I & J & K & L & M & N & O & P & R & S & T & U & V & Z & A & B & C & &  \\
+%  \hline{1-22}
+\end{tabular}
+$$
+\begin{flushleft}
+Pa šifrirajmo besedo PONEDELJEK, s šifrirnim kljuèem 3. \\
+P $\Rightarrow$ T, O $\Rightarrow$ S, N $\Rightarrow$ R, \ldots\\
+\end{flushleft}
+\hspace{8em}Dobimo besedo: TSRHGHOMHN\\
+
+Na prvi pogled se zdi beseda nerazpoznavna, a je tako šifro lahko razvozlati saj moraš ugotoviti samo številko zamika abecede,
+tukaj pa je samo 22 razliènih možnosti(uporabljena je abeceda brez šumnikov), za kar ti ne bi smelo vzeti preveè èasa. Boljšo
+varnost bi lahko ustvarili s tem, da bi šifrirani abecedi nakljuèno razporedili èrke, o tem pa v naslednjem poglavju.
+\newpage
+
+\subsubsection{Monoalfabetska substitucija}
+
+Nadrejeni pojem za substitucijo, pri kateri šifrirana abeceda sestoji iz èrk, drugih simbolov in/ali številk, je monoalfabetska šifra. Vse šifre s substitucijo, ki smo jih do zdaj spoznali v tej nalogi, spadajo v to vrsto monoalfabetskega šifriranja.
+
+Možnost, da dekriptiramo šifrirano sporoèilo, ob predpostavki, da poznamo jezik, v katerem je besedilo napisano, je v tem, da poišèemo drugo sporoèilo v istem jeziku, ki je dovolj dolgo, da z njim popišemo en ali dva lista papirja in potem preštejemo, kako pogosto se v njem pojavljajo posamezne èrke. Najpogostejši èrki reèemo prva, drugi najpogostejši druga itn., dokler nismo prešteli vseh èrk v odprtem besedilu.
+
+Potem si natanko ogledamo skrivno besedilo, ki ga želimo dekriptirati, in razvrstimo po številu tudi njegove simbole. Najdemo najpogostejši simbol in mu dodelimo vrednost prve èrke iz preizkusnega odprtega besedila, drugi najpogostejši simbol bo postal druga èrka, tretji najpogostejši tretja èrka in tako naprej, dokler nismo tako obdelali vseh simbolov kriptograma, ki ga želimo odpreti.
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+  a & 10,47 & m & 3,30\\
+  b & \phantom{1}1,94  & n & 6,33\\
+  c & \phantom{1}0,66  & o & 9,08\\
+  è & \phantom{1}1,48  & p & 3,37\\
+  d & \phantom{1}3,39  & r & 5,01\\
+  e & 10,71            & s & 5,05\\
+  f & \phantom{1}0,11  & š & 1,00\\
+  g & \phantom{1}1,64  & t & 4,33\\
+  h & \phantom{1}1,05  & u & 1,88\\
+  i & \phantom{1}9,04  & v & 3,76\\
+  j & \phantom{1}4,67  & z & 2,10\\
+  k & \phantom{1}3,70  & ž & 0,65\\
+  l & \phantom{1}5,27  &   & \\
+\end{tabular}
+\end{center}
+
+\subsection{Dekriptiranje šifriranega sporoèila}
+
+\begin{flushleft}
+PCQ VMJYPD LBYK LYSO KBXBJXWXV BXV ZCJPO EYPD KBXBJYUXJ LBJOO KCPK. CP LBO LBCMKXPV XPV IYJKL PYDBL, QBOP KBO BXV OPVOV LBO LXRO CI SX'XJMI, KBO JCKO XPV EYKKOV LBO DJCMPV ZOICJO BYS, KXUYPD: ``DJOXL EYPD, ICJ X LBCMKXPV XPV CPO PYDBLK Y BXNO ZOOP JOACMPLYPD LC UCM LBO IXZROK CI FXKL XDOK XPV LBO RODOPVK CI XPAYOPL EYPDK. SXU Y SXEO KC ZCRV XK LC AJXNO X IXNCMJ CI UCMJ SXGOKLU?''
+
+\vspace{1ex}
+OFYRCDMO, LXROK IJCS LBO LBCMKXPV XPV CPO PYDBLK.
+\end{flushleft}
+Zamislimo si, da smo to šifrirano besedilo prestregli in da ga moramo dekriptirati. Vemo, da gre za angleško besedilo. ki je šifrirano s pomoèjo monoalfabetske substitucije, toda o kljuèu ne vemo nièesar. Vseh mogoèih kljuèev skorajda ni mogoèe preizkusiti, zato moramo paè uporabiti frekvenèno analizo, ki smo jo pojasnili v prejšnjem poglavju. V nadaljevanju bomo postopoma posredovali navodilo za dekriptiranje tega šifriranega besedila, toda kdor si upa, lahko to opravi tudi na lastno pest.
+
+Prva reakcija kriptoanalitika, ki bi dobil v roke takšno šifrirano besedilo, bi seveda bila, ugotoviti frekvenco vsake posamezne èrke. S tem bi dobil tabelo 1. Kot smo prièakovali, se posamezne èrke pojavljajo razlièno pogosto.
+
+\subsection{Tajna pisava Marije Stuart}
+Zjutraj 15. oktobra 1586 je stopila škotska kraljica Marija Stuart v prenapolnjeneo sodno dvorano na gradu Fotheringhay.
+Dolgoletni zapor in zaèetek revmatiènega obolenja sta jo moèno prizadela, vendar ni izgubila svojega dostojanstva, svoje
+obvladljivosti in oèitno gosposkega nastopa. Naslonjena na svojega zdravnika je odšla mimo sodnikov, visokih uradnikov in
+gledalcev do prestola sredi dolge, ozke dvorane. Prestol je imel za znak spoštovanja, vendar se je motila. Prazen prestol je
+simboliziral kraljico Elizabeto, Marijino nasprotnico in tožnico. Z blagim nasiljem so odpeljali Marijo naprej na drugo stran
+na drugo stran dvorane, do škrlatno rdeèega žametnega stola, ki je bil namenjen za obtožene.
+
+Marijo Stuart, škotsko kraljico, so obtožili izdajstva. Obdolžili so jo, da je sodelovala pri naèrtovanju umora kraljice
+Elizabete I. znamenom, da se sama polasti angleške krone. Sir Francis Walsingham, minister, ki je bil pristojen za Elizabetino
+varnost, je dal druge zarotnike že zapreti, od njih izsilil priznanja in jih dal usmrtiti. Zdaj je hotel dokazati, da je bila
+Marija srce zarote; s tem je bila enako kriva in si je zaslužila smrt.
+
+Walsingham je natanko vedel, da mora kraljico Elizabeto preprièati o Marijini krivdi, èe jo hoèe dati usmrtiti. Elizabeta je
+sicer prezirala Marijo, vendar je imela dobre razloge za to, da se ni odloèila za smrtno kazen. Marija je bila škotska kraljica
+in mnogi so dvomili, da je angleško sodišèe pristojno za to, da bi voditeljico tuje države obsodilo na smrt. Usmrtitev Marije
+pa bi bila tudi muèen vzorèni primer -- èe je bilo državi dovoljeno, da bi usmrti to kraljico, bodo imeli uporniki manj
+pomislekov, da bi ubili drugo monarhinjo, namreè kraljico Elizabeto samo. Poleg tega pa sta bili Elizabeta in Marija sestrièni;
+to krvno sorodstvo pa je pripomoglo, da se Elizabeta ni odloèila za to skrajno potezo. SKratka, Elizabeta bi dopustila
+usmrtitev Marije samo v primeru, èe bi Walsingham lahko brez kanèka dvoma dokazal, da je bila vpletena v morilsko zaroto.
+
+Zarotniki so bili skupina mladih katoliških plemièev, ki so hoteli Elizabeto, protestantko, odstraniti in namesto nje na
+prestol posaditi katolièanko Marijo. Za sodišèe ni bilo nobenega dvoma, da je bila Marija za zarotnike svetel lik, toda ali je
+v resnici odobrila to dejanje, še ni bilo dokazano. Marija pa je v resnici blagoslovila to zaroto. Walsingham je bil zdaj pred
+nalogo, da dokaže otipljivo povezavo med Marijo in zarotniki.
+
+Marija, obleèena v èrno svilo, je sedela sama pred sodniki. V primeru izdajstva obtoženi niso smeli imeti zagovornika niti niso
+smeli navesti nobene prièe. Za pripravo obrambe Mariji niso dovolili niti pomoèi tajnika. Vsekakor pa je vedela, da njen
+položaj ni povsem brezupen, saj si je iz previdnosti z zarotniki dopisovala samo v skrivni pisavi. Ta je spreminjala besede v
+verige simbolov, ki niso imeli nobenega pomena. Walsingham je morda zaplenil pisma, vendar je bila Marija trdno preprièana, da
+tistih simbolov nikoli ne bo mogel razvozlati.\newpage Èe pa bo njihov pomen ostal skrit, pisem nikoli ne bodo mogli uporabiti
+kot dokaz proti njej. Vsekakor je vse to temeljilo na domnevi, da tajne pisave niso mogli prebrati. Na Marijino nesreèo pa
+Walsingham ni bil samo Elizabetin prvi minister, temveè tudi vodja tajnih agentov v Angliji. Prestregel je Marijina pisma
+zarotnikov in pri tem natanko vedel, kdo ima potrebno znanje, da bi jih lahko razvozlal. Thomas Phelippes je bil najveèji
+strokovnjak za dekriptiranje šifriranih besedil v državi; že veè let je dekriptiral sporoèila zarotnikov in zbiral dokaze za
+njihovo obsodbo. Èe bi lahko dekriptiral tudi obremenjujoèa pisma med Marijo in zarotniki, potem bi bila zapisana smrt. Èe pa
+je bila Marijina tajna pisava dovolj moèna, da bo lahko ohranila njene skrivnosti, bi morda ostala pri življenju. Ni bilo
+prviè, da je trdnost kakšne tajne pisave odloèala o življenju ali smrti.
+
+\begin{figure}[!htbp]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=.9\textwidth]{./Slike/MarijaStuart.jpg}\\
+  \caption{Nomenklator Marije Stuart. Sestavljen je iz šifrirne abecede in kodnih besed.}\label{figure:MarijaStuart}
+\end{figure}
+
+\subsection{Le Chiffre indechiffrable}
+
+\section{Mehanizirano šifriranje}
+
+\subsection{Prvi šifrirni stroji}
+
+\subsection{Dekriptiranje enigme}
+Tudi po prvi svetovni vojni so angleški kriptoanalitiki v Room 40 nadzorovali nemške radijske zveze. Toda od leta 1926 naprej so slišali samo radijska poroèila, s katerimi si niso znali pomagati. Enigma se je uveljavila in èim veè teh naprav so uporabljali Nemci, tem manj uspehov so dosegli ljuuje v Room 40. Tudi Amerièani in Francozi so poskušali streti sporoèila, šifrirana z enigmo, vendar prav tako brez uspeha. Nemèija je tedaj imela najvarnejši vojaški telekomunikacijski sistem na svetu.
+Kriptoanalitiki zahodnih sil, ki so bili med prvo svetovno vojno še krepko pri stvari, so hitro odnehali. Še deset let pred tem so se zaradi grozeèega poraza noè in dan ukvarjali z nemškimi šiframi. Oèitno sta strah in sovraštvo kljuèni gonilni sili in zelo ugodno delovno okolje za uspešne dekripterje.
+
+Ena država pa si ni mogla privošèiti lenarjenja. Po prvi svetovni vojni je Poljska spet postala samostojna država, toda poljaki so kmalu spoznali, da je njihova na novo pridobljena neodvisnost spet ogrožena. Na vzhodu je ležala Sovjetska zveza, ki si je prizadevala širiti svoj komunizem, na zahodu pa je bila Nemèija, ki je želela spet pridobiti ozemlja, ki jih je bila po vojni prisiljena odstopiti Poljski. Tako uklešèena Poljska je bila hvaležna za vsako informacijo o obeh nasprotnikih, zato je na novo organizirala dekriptersko službo, tako imenovani Biuro Szyfrov. Èe je nujnost mati izumov, potem je sovraštvo mati kriptoanalize. Udarna moè Biuroja Szyfrov se je razloèno pokazala z uspehom v poljsko-sovjetski vojni leta 1919 in 1920. Samo v avgustu leta 1920, ko so sovjetske armade že stale pred vrati Varšave, dekriptirali veè kot 400
+sovražnikovih sporoèil. Nadzorovanje nemškega radijskega prometa je bilo prav tako uspešno, dokler niso leta 1926 nemci zaèeli uporabljati enigmo za šifriranje njihovih sporoèil.
+
+Za dekriptiranje nemški radijskih zvez je bil odgovoren stotnik Maksymilian Ciezki, vnet patriot, ki je odrasel v mestu Szamotuty, središèu poljskega nacionalizma. Vendar Ciezki ni imel na voljo nobene verzije enigme, brez poznavanja žiènih povezavv tej vojaški napravi pa ni imel možnosti za dekriptiranje sporoèil nemške vojske. Zaradi tega se je znašel v takšni stiski, da je nekoè v nemoènem besu celo najel jasnovidca, ki naj bi iz prestreženih radijskih pogovorov prièaral kakšen smisel. Ni treba posebej poudarjati,da se tudi jasnovidcu ni posreèil tisti preboj, ki bi ga potrebovali. Tako je ostal prihranjen za Nemca Hansa-Thilo Schmidta, ki je bil razoèaran nad svojo domovino in je pripravil pot za napad na enigmo.
+
+Hans-Thilo Schmidt se je rodil leta 1888 v Berlinu kot drugi sin uglednega profesorja in njegove plemiške žene. Schmidt se je odloèil za kariero v vojski in ji služil med 1. svetovno vojno, toda pri drastiènih redukcijah zaradi versajske pogodbe ga je vojska uvrstil med tiste, ki so bili odveè. Nato je poskusil sreèo kot poslovnež, vendar je moral tovarno mila med hudo inflacijo zapretiin je ostal z družine brez vseh sredstev.
+
+Uspeh njegovega starejšega brata Rudolpha je samo še poveèal njegov obup. Tudi Rudolph je bil med vojno zaposlen v vojski, vendar je v njej delal še naprej. V dvajsetih letih je naredil hitro kariero in je nazadnje napredoval do štabnega poveljnika vojaških komunikacij. Rudolph je bil tisti, ki je odobril uporabo enigme v vojski.
+
+Po propadu svojega podjetja je bil Hans-Thilo prisiljen prositi brata za pomoè, in Rudolph mu je priskrbel delo v berlinskem šifrirnem centru, v službi, ki je bila odgovorna za šifrirano komunikacijo v vojski. Ta šifrirni center je bil tajna komandna centrala za enigmo, v kateri so se izmenjavale strogo zaupne informacije. Ko je Schmidt nastopil novo delo, je pustil svojo družino na Bavarskem, kjer so bili življenjski stroški nižji. Živel je sam v dragem Berlinu, obubožan in brez prijateljev, zavidal je svojemu bratu in bil poln zamer proti državi, ki ni potrebovala njegovega dela. Posledice so bile neizogibne. Schmidt je nekaj denarja zaslužil s tem, da je tajne informacije o enigmi prodajal tujim oboroženim silam, s èimer se je hkrati mašèeval, spodokopaval varnost države in škodil uradu svojega brata.
+
+8.11.1931 se je Schmidt nastanil v hotelu Grand v belgijskem mestu Verviers. Bil je dogovorjen s francoskim agentom, ki je delal pod imenom Rex. Za vrednost 10.000 mark (po današnji vrednosti približno 20.000 dolarjev) je Schmidt dovolil agentu, da je fotografiral  dva dokumenta: Nvodila za uporabo šifrirnega stroja Enigma in Navodila za uporabo kljuèev šifrirnega stroja Enigma. Ti dokumenti sicer niso vsebovali natanènega opisa žiènih povezav v valjih, a so vsebovali dovolj potrebnih podatkov za njihovo razvozlanje.
+
+Zaradi Schmidtove izdaje so zavezniki lahko izdelali natanèen duplikat nemške enigme. Vsekakor pa to ni zadostovalo za dekriptiranje z enigmo šifriranih sporoèil. Trdnost šifre ni odvisna od tega ali stroj ostane v tajnosti, temveè od varovanja tajnosti o njegovi vsakokratni nastavitvi (tj. od kljuèa). Èe hoèe kriptoanalitik dekriptirati prestreženo sporoèilo, mora ne samo imeti duplikat enigme, temveè mora tudi ugotoviti, kateri od veè milijard kljuèev je bil uporabljen za šifriranje posameznega sporoèila.
+
+Francoska tajna služba je oèitno opravila svojo domaèo nalogo, saj je pridobila obvešèevalca in dobila dokumente, ki so vsebovaliinformacije o žiènih povezavah v enigmi. Francoski kriptoanalitiki pa oèitno niso imeli ne volje, ne sposobnosti, da bi znali pravilno oceniti te najnovejše podatke. Po uspehu v prvi svetovni vojni so trpeli zaradi samoprecenjevanja in pomanjkanja motivacije. Bureau du Chiffre je menil, da ni potrebno niti to, da bi izdelal duplikat vojaške enigme, saj je bil preprièan, da je naslednja ovira, namreè najti kljuè za doloèeno z enigmo šifrirano sporoèilo, nepremagljiva.
+
+Naneslo je tako, da so Francozi pred desetimi leti podpisali s Poljsko vojaški sporazum. Poljaki so pokazali zanimanje za vse, kar je bilo povezano z enigmo, zato so Francozi izroèili svojim zaveznikom fotografije Schmidtovih dokumentov in ljudem v Biuro Szyfrow prepustili brezupno nalogo, da bi strli enigmo. Dokumenti so bili zgolj zaèetna pomoè, to so vedeli tudi Poljaki, v nasprotju s Francozi pa so se bali invazije in so zaradi tega imeli dovolj razlogov, da ne opustijo nobene priložnosti. Poljaki so se zagrizli v misel, da mora obstajati kakšna bljižnica, po kateri bi našli kljuè za sporoèilo šifrirano z enigmo. Treba je samo dovolj truda, iznajdljivosti in bistroumnosti pri iskanju te poti.
+
+Scmidtovi dokumenti niso razkrili samo notranje povezave v valjih, natanko so bili opisani tudi kljuèi, ki so jih uporabljali Nemci. Operaterji enigem so vsak mesec dobili novo knjigo kljuèev, ki je za vsak dan predpisovala doloèen kljuè. Za prvi dan v nekem mesecu je knjiga kljuèev naprimer doloèala naslednji dnevni kljuè:
+
+\begin{enumerate}
+  \item Povezave na stikalni plošèici: A/L--P/R--T/D--B/W--K/F--O/Y
+  \item Položaj valjev: 2-3-1
+  \item Osnovna nastavitev valjev: Q-C-W
+\end{enumerate}
+
+Položaj valjev in osnovna nastavitev valjev se imenuje konfiguracija valjev. Za ta doloèen dnevni kljuè je moral šifrer svoj šifrirni stroj Enigma nastaviti takole:
+
+\begin{enumerate}
+  \item Povezave na stikalni plošèi: Èrki A in L povezati s kablom na stikalni plošèici in ju s tem zamenjati; enako narediti s pari èrk P in R, T in D, B in W, K in F, ter nazadnje še O in Y.
+  \item Položaj valjev: Valj 2 vstavi v prvo odprtino za valje, valj 3 v drugo odprtino in valj 1 v tretjo odprtino.
+  \item Osnovna nastavitev valjev: Na zunanjem obroèu vsakega valja je vgravirana abeceda, s pomoèjo katere ga lahko postavimo v doloèen položaj. V zgornjem primeru bi šifrer tako dolgo vrtel valj v prvi odprtini, da bi bil zgoraj Q, valj v drugi odprtini tako dolgo, da bi bil zgoraj C, in valj v tretji odprtini tako dolgo, da bi bil zgoraj W.
+\end{enumerate}
+
+Ena od možnosti je bila, da bi celoten radijski promet enega dneva šifrirali z dnevnim kljuèem. Tedaj so šifrerji z enigmo en cel dan na zaèetku vsakega sporoèila nastavili vsakokratni dnevni kljuè. Vsako radijsko sporoèilo so najprej odtipkali v šifrirni stroj; šifrirano besediloso si zapisali in ga izroèili radiotelegrafistu, da ga je poslal naprej. Na strani prejemnika pa je sporoèilo najprej dobil radiotelegrafist in ga izroèil èloveku, ki je delal z enigmo. Ta ga je spet odtipkal v svoj stzroj, na katerem je že prej nastavil dnevni kljuè. Èrke, ki so se po vrsti prikazovale na plošèici z luèkami, so setavljale odprto besedilo.
+
+Ta postopek je bil dovolj varen, njegova slabost pa je bila v tem, da se dnevni kljuè uporablja vedno znova, morda za pošiljanje kar nekaj sto sporoèil, ki se naberejo vsak dan. Èe se za šifriranje ogromnega števila sporoèila uporablja en sam kljuè, je  za kriptoanalitika navadno lažje kako ga razvozlati. Velika kolièina besedil, ki so enako šifrirana, dajejo kriptoanalitiku veèjo možnost, da odkrije kljuè. Že pri preprostejših postopkih smo videli,da je preprosteje dekriptirati mono alfabetsko šifro, èe je na voljo veè strani šifriranega besedila in ne samo nekaj stavkov.
+
+Na prvi pogled se zdi tak sistem neprebojen, vendar poljski kriptoanalitiki niso izgubili poguma. Bili so pripravljeni izkoristiti vsako možnost samo, da bi našli kakšno šibko toèko v enigmi ter v sistemu individualnih kljuèev. Biuro Szyfrow je organiziral teèaj iz kriptografije ter nanj povabil 20 matematikov.
+
+\section{Jezikovna ovira}
+
+\subsection{Pozabljeni jeziki in antièni zapisi}
+
+\subsection{Skrivnost lineare B}
+
+\section{Moderno šifriranje}
+
+\subsection{Alice in Bob se predstavita}
+
+\subsubsection{Matematika RSA}
+Sledi opis èisto matematiène funkcije za šifriranje s postopkom RSA.
+
+\begin{enumerate}
+  \item Alice izbere dve velikanski praštevili, p in q. Praštevili naj bi bili zelo veliki, zaradi preprostosti pa bomo kot primer vzeli, da je Alice izbrala p=17 in q=11. Ti števili mora skrbno ohraniti samo zase.
+  \item ALice pomnoži praštevili med seboj in dobi novo število, v tem primeru N=187. Zdaj izbere še eno število, e, na primer e=7.(e in (p-1)*(q-1)) naj bi bili brez skupnega delitelja, vendar je to že tehnièna podrobnost.
+  \item Zdaj lahko Alice e in N objavi v javnem seznamu. Ker sta obe števili potrebni za šifriranje, morata biti dostopni vsem, ki želijo šifrirati sporoèilo za Alice. Tvorita tako imenovani javni kljuè. (Število e ni rezervirano za Alice, lahko je sestavni del tudi drugih javnih kljuèev. Vsekakor pa morajo biti vrednosti N, ki so odvisne od vsakokrat izbranega p in q, za vsak kljuè drugaène.)
+  \item Da bi sporoèilo lahko šifrirali, ga moramo najprej spremeniti v število M. Tako lahko na primer besedo po kodi ASCII spremenimo v binarno število, ki ga potem za namen šifriranja lahko obravnavamo kot decimalno število M. Ta M šifriramo in dobimo tajno besedilo po naslednji formuli.
+  $$
+    C=M^{e}\pmod N
+  $$
+  \item Vzemimo, da želi Bob poslati samo simbolièen znak za poljuben X. V kodi ASCII je predstavljen kot 1011000, kar ustreza decimalnemu številu 88. Zato je M=88.
+  \item Da bi sporoèilo šifriral, Bob najprej poišèe Alicein javni kljuè, torej N=187 in e=7. Ti števili lahko vstavi v šifrirano formulo Alice namenjenega sporoèila. Pri M=88 dobimo formulo
+  $$
+    C=88^{7} (\bmod 187)
+  $$
+  \item Žepni raèunalnik ni dober za takšne izraèune, saj zaslon sploh ne more prikazati naravnost astronomski številk. Vsekakor pa obstaja dober trik za izraèunavanje potenc v modularni aritmetiki. Ker je 7=4+2+1, vemo tudi naslednje:
+  \begin{eqnarray}
+          % \nonumber to remove numbering (before each equation)
+          \nonumber
+            88^7 \bmod 187 &=& [88^4(\bmod 187)\times 88^2(\bmod 187)\times 88^1(\bmod 187)]\bmod187 \\
+          \nonumber
+            88^1 &=& 88(\bmod 187) \\
+          \nonumber
+            88^2 &=& 77(\bmod 187) \\
+          \nonumber
+            88^4 &=& 132(\bmod 187) \\
+          \nonumber
+            88^7 &=& 11(\bmod 187)
+  \end{eqnarray}
+
+  Zdaj Bob pošlje Alice šifrirano besedilo, C=11
+
+  \item Vemo, da so eksponenti v modularni aritmetiki enosmerne funkcije, zato se je zelo težko vrniti iz C=11 in odkriti prvotno sporoèilo M Eve sporoèila torej ne more odpreti.
+  \item Alice pa lahko sporoèilo prebere, ker ima za to potrebne podatke: vrednosti p in q. Najprej izraèuna posebno število d, tako imenovani kljuè za dešifriranje, imenovan tudi zasebni kljuè. Število d se izraèuna po naslednji formuli:
+  \begin{eqnarray}
+  % \nonumber to remove numbering (before each equation)
+  \nonumber
+    e\times d &=& 1(\bmod (p-1)\times (q-1)) \\
+  \nonumber
+    7\times d &=& 1(\bmod 16\times 10) \\
+  \nonumber
+    7\times d &=& 1(\bmod 160) \\
+  \nonumber
+    d &=& 23
+  \end{eqnarray}
+
+  (Vrednosti d ne dobimo neposredno, s tako imenovanim Evklidovim algoritmom pa sorazmerno preprosto in hitro).
+
+  \item Da bi sporoèilo dešifrirala, Alice preprosto uporabi naslednjo formulo:
+  \begin{eqnarray}
+  % \nonumber to remove numbering (before each equation)
+  \nonumber
+    M &=& C^d (\bmod 187) \\
+  \nonumber
+    M &=& 11^23(\bmod 187) \\
+  \nonumber
+    M &=& 11^1(\bmod 187)\times 11^2(\bmod)\times 11^4(\bmod 187)\times 11^6(\bmod 187)](\bmod 187) \\
+  \nonumber
+    M &=& [11\times 121\times 55\times 154](\bmod 187) \\
+  \nonumber
+    M &=& 88 \\
+  \nonumber
+    M &=& X v ASCII
+  \end{eqnarray}
+
+  Rivest, Shamir in Adleman so s tem ustvarili posebno enosmerno funkcijo, ki jo je mogoèe obrniti samo, èe poznamo tajni vrednosti p in q. Vsak uporabnik te funkcije ju lahko priredi zase z izbiro vrednosti p in q, ki med seboj pomnoženi dasta N. S tem osebnim N lahko šifriramo sporoèila, ki jih lahko dešifrira samo upravièeni prejemnik, ker paè samo on pozna p in q in s tem tudi kljuè za dešifriranje d.
+
+\end{enumerate}
+
+
+
+\subsection{Pretty good privacy}
+
+\subsection{Kvantini skok v prihodnost}
+
+\section{Zakljuèek}
+
+\section{Viri}
+
+\begin{thebibliography}{99}
+  \bibitem{buchmann}	BUCHMANN, J. A.: Introduction to cryptography, Springer-Verlag NY, 2004.
+  \bibitem{singh 1}	SINGH, Simon: Knjiga šifer
+  \bibitem{singh 2}	SINGH, Simon: The Code Book, Crypto CD ROM
+  \bibitem{sp. stran 1}	http://simonsingh.net/cryptography/
+  \bibitem{sp. stran 2}	Journey into Cryptography: https://www.khanacademy.org/math/applied-math/cryptography
+  \bibitem{wikibook}	Wikibooks, Open book for an open world: http://en.wikibooks.org/wiki/Cryptography
+  \bibitem{wikipedia 1}	Wikipedia, the Free Encyclopedia: http://en.wikipedia.org/
+  \bibitem{wikipedia 2} 	Wikipedia, Cryptography Portal:
+  \bibitem{wikipedia 3} 	http://en.wikipedia.org/wiki/Portal:Cryptography
+  \bibitem{sp. stran 3}	Uporaba kriptografije v internetu: http://www.si-ca.si/kripto/index.htm
+  \bibitem{oetiker} 	OETIKER, Tobias: Ne najkrajši uvod v LaTeX 2e
+\end{thebibliography}
+
+\end{document}
