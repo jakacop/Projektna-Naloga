@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.18)  20 JAN 2019 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.18)  21 JAN 2020 13:27
 entering extended mode
-**D:/Users/jCop/Desktop/Desktop_stuff/Naloga/Naloga/Naloga.tex
-(D:/Users/jCop/Desktop/Desktop_stuff/Naloga/Naloga/Naloga.tex
+**D:/Users/jCop/Documents/GitHub/Projektna-Naloga/Naloga.tex
+(D:/Users/jCop/Documents/GitHub/Projektna-Naloga/Naloga.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -690,12 +690,12 @@ Overfull \hbox (29.74158pt too wide) in paragraph at lines 616--617
 [28] (Naloga.aux) ) 
 Here is how much of TeX's memory you used:
  13151 strings out of 493334
- 258997 string characters out of 3136675
+ 258991 string characters out of 3136675
  319010 words of memory out of 3000000
  16386 multiletter control sequences out of 15000+200000
  17173 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,56p,1258b,660s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,56p,1256b,660s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\Users\jCop\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ectt1095.pk> <D:\Users\jCop\AppData\Local\MiKTeX\2.9\fonts\pk\l
 jfour\jknappen\ec\dpi600\ecrm0800.pk> <D:\Users\jCop\AppData\Local\MiKTeX\2.9\f
@@ -716,7 +716,7 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Naloga.pdf (28 pages, 1277993 bytes).
+Output written on Naloga.pdf (28 pages, 1277995 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
